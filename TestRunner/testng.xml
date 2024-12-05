@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners> <listener class-name=""></listener> </listeners>
+	<test thread-count="5" name="Test AutomationDemo">
+		<parameter name="application" value="AutomationDemo"></parameter>
+			<groups> <run> <include name=""></include></run></groups>
+		<classes>
+			<class name="testcase.AutoDemoSite" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test Astroyogi">
+		<parameter name="application" value="Astroyogi"></parameter>
+		<classes>
+			<class name="testcase.GetYourKundli" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test Flipkart">
+		<parameter name="application" value="Flipkart"></parameter>
+		<classes>
+			<class name="testcase.FlipkartSearch" />
+		</classes>
+	</test>
+
+</suite>
